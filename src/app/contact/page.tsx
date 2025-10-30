@@ -156,14 +156,16 @@ export default function ContactPage() {
                 ></textarea>
 
                 <div className="flex items-center gap-4">
-                  <button
-                    type="submit"
-                    className="flex items-center gap-3 hover:bg-yellow-400 border-amber-400 border-2 font-semibold px-8 py-4 rounded-full transition shadow-md"
-                  >
-                    SEND MESSAGE
-                    <GrSend className="w-5 h-5 text-white" />
-                    {/* <Send className="w-5 h-5" /> */}
-                  </button>
+                  <button className="group relative inline-flex h-[calc(48px+6px)] items-center justify-center rounded-full border-[2px] border-amber-400 bg-neutral-950 py-1 pl-6 pr-14 font-medium text-neutral-50">
+                                      <span className="z-10 text-[15px] font-semibold px-2">
+                                        SEND MESSAGE
+                                      </span>
+                                      <div className="absolute right-0 inline-flex h-13 w-13 items-center justify-end rounded-full bg-amber-400 transition-[width] duration-400 ease-in-out group-hover:w-[calc(101%-1px)]">
+                                        <div className="mr-3.5 flex items-center justify-center">
+                                          <GrSend className="text-[20px]" />
+                                        </div>
+                                      </div>
+                                    </button>
                 </div>
               </form>
             </div>
