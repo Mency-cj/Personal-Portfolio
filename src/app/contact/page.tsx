@@ -40,7 +40,14 @@ export default function ContactPage() {
           <h1 className="font-light text-lg text-gray-500 pb-6">
             Feel free to contact me
           </h1>
-          <h1 className="font-extrabold text-5xl">Contact <span className="text-amber-400">Me</span></h1>
+          <div className="relative">
+            <h1 className="font-extrabold text-[56px]">
+              GET IN <span className="text-amber-400">TOUCH</span>
+            </h1>
+            <span className="absolute left-0 right-0 top-[50%] font-[800] tracking-[.8] text-[110px] transform -translate-y-1/2 text-[hsla(0,0%,100%,0.07)]">
+              CONTACT
+            </span>
+          </div>
         </div>
         <div className="pb-32">
           <div className="flex">
@@ -157,15 +164,15 @@ export default function ContactPage() {
 
                 <div className="flex items-center gap-4">
                   <button className="group relative inline-flex h-[calc(48px+6px)] items-center justify-center rounded-full border-[2px] border-amber-400 bg-neutral-950 py-1 pl-6 pr-14 font-medium text-neutral-50">
-                                      <span className="z-10 text-[15px] font-semibold px-2">
-                                        SEND MESSAGE
-                                      </span>
-                                      <div className="absolute right-0 inline-flex h-13 w-13 items-center justify-end rounded-full bg-amber-400 transition-[width] duration-400 ease-in-out group-hover:w-[calc(101%-1px)]">
-                                        <div className="mr-3.5 flex items-center justify-center">
-                                          <GrSend className="text-[20px]" />
-                                        </div>
-                                      </div>
-                                    </button>
+                    <span className="z-10 text-[15px] font-semibold px-2">
+                      SEND MESSAGE
+                    </span>
+                    <div className="absolute right-0 inline-flex h-13 w-13 items-center justify-end rounded-full bg-amber-400 transition-[width] duration-400 ease-in-out group-hover:w-[calc(101%-1px)]">
+                      <div className="mr-3.5 flex items-center justify-center">
+                        <GrSend className="text-[20px]" />
+                      </div>
+                    </div>
+                  </button>
                 </div>
               </form>
             </div>

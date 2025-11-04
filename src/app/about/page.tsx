@@ -47,9 +47,14 @@ export default function AboutPage() {
           <h1 className="font-light text-lg text-gray-500 pb-6">
             Get to know me
           </h1>
-          <h1 className="font-extrabold text-5xl">
-            About <span className="text-amber-400">Me</span>
-          </h1>
+          <div className="relative">
+            <h1 className="font-extrabold text-[56px]">
+              ABOUT <span className="text-amber-400">ME</span>
+            </h1>
+            <span className="absolute left-0 right-0 top-[50%] font-[800] tracking-[.8] text-[110px] transform -translate-y-1/2 text-[hsla(0,0%,100%,0.07)]">
+              RESUME
+            </span>
+          </div>
         </div>
         <div className="px-8 pt-10 pb-20">
           <div className="flex">
@@ -119,16 +124,23 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="pt-3">
-                  <button className="group relative inline-flex h-[calc(48px+6px)] items-center justify-center rounded-full border-[2px] border-amber-400 bg-neutral-950 py-1 pl-6 pr-14 font-medium text-neutral-50">
-                    <span className="z-10 text-[17px] font-semibold px-1">
-                      Download CV
-                    </span>
-                    <div className="absolute right-0 inline-flex h-13 w-13 items-center justify-end rounded-full bg-amber-400 transition-[width] duration-400 ease-in-out group-hover:w-[calc(101%-1px)]">
-                      <div className="mr-3.5 flex items-center justify-center">
-                        <FaDownload className="text-[20px]" />
+                  <a
+                    href="/Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download="Mency_CV.pdf"
+                  >
+                    <button className="group relative inline-flex h-[calc(48px+6px)] items-center justify-center rounded-full border-[2px] border-amber-400 bg-neutral-950 py-1 pl-6 pr-14 font-medium text-neutral-50 cursor-pointer">
+                      <span className="z-10 text-[17px] font-semibold px-1">
+                        Download CV
+                      </span>
+                      <div className="absolute right-0 inline-flex h-13 w-13 items-center justify-end rounded-full bg-amber-400 transition-[width] duration-400 ease-in-out group-hover:w-[calc(101%-1px)]">
+                        <div className="mr-3.5 flex items-center justify-center">
+                          <FaDownload className="text-[20px]" />
+                        </div>
                       </div>
-                    </div>
-                  </button>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -184,6 +196,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
+        <hr className="border-t-1 mx-auto max-w-lg border-[#252525]" />
         <section className=" text-white py-16 px-4">
           <h2 className="text-3xl font-bold text-center mb-12">EDUCATION</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -209,14 +222,16 @@ export default function AboutPage() {
             {/* Education */}
             <div className="space-y-8">
               {education.map((item, index) => (
-                <div key={index} className="flex items-start gap-4 relative">
+                <div key={index} className="flex items-start gap-4 relative ">
                   {/* Circle icon */}
                   <div className="flex-shrink-0">
-                    <div className="bg-yellow-500 text-white w-10 h-10 flex items-center justify-center rounded-full">
+                    <div className="bg-yellow-500 text-white w-10 h-10 flex items-center justify-center rounded-full overflow-hidden">
                       <FaBriefcase />
                     </div>
+                    {/* <div className="flex-1 absolute border-1 text-xs border-gray-700 top-0 bottom-0 overflow-visible left-5"></div> */}
                   </div>
                   {/* Content */}
+
                   <div className="flex-1 border-l border-gray-700 pl-6">
                     <span className="text-gray-400 font-[600] px-2 py-0.5 bg-[#252525] rounded-full text-xs">
                       {item.year}

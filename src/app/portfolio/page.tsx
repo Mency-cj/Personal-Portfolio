@@ -15,9 +15,14 @@ export default function PortfolioPage() {
           <h1 className="font-light text-lg text-gray-500 pb-6">
             Showcasing some of my work
           </h1>
-          <h1 className="font-extrabold text-5xl">
-            My <span className="text-amber-400">Portfolio</span>
-          </h1>
+          <div className="relative">
+            <h1 className="font-extrabold text-[56px]">
+              MY <span className="text-amber-400">PORTFOLIO</span>
+            </h1>
+            <span className="absolute left-0 right-0 top-[50%] font-[800] tracking-[.8] text-[110px] transform -translate-y-1/2 text-[hsla(0,0%,100%,0.07)]">
+              WORKS
+            </span>
+          </div>
         </div>
         <div className="mb-20">
           <div className="grid grid-cols-3 gap-15">
@@ -25,11 +30,11 @@ export default function PortfolioPage() {
               <div className="p-[4px] rounded-2xl bg-radial-[at_25%_25%] from-white to-zinc-900 to-75% shadow-[0_0_50px_#0b0b0b]/50 m-3 max-w-sm">
                 <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 border bg-[#0b0b0b]">
                   <a href="https://github.com/Mency-cj/ZapRide">
-                  <img
-                    src="/ZapRide.png"
-                    alt="University of Southern California"
-                    className="absolute inset-0 h-full w-full object-cover"
-                  />
+                    <img
+                      src="/ZapRide.png"
+                      alt="ZapRide website image"
+                      className="absolute inset-0 h-full w-full object-cover"
+                    />
                   </a>
                 </article>
               </div>
@@ -69,11 +74,11 @@ export default function PortfolioPage() {
               <div className="p-[4px] rounded-2xl bg-radial-[at_25%_25%] from-white to-zinc-900 to-75% shadow-[0_0_50px_#0b0b0b]/50 m-3 max-w-sm">
                 <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 border bg-[#0b0b0b]">
                   <a href="https://github.com/Mency-cj/To-do-app">
-                  <img
-                    src="/TaskFlow.png"
-                    alt="University of Southern California"
-                    className="absolute inset-0 h-full w-full object-cover"
-                  />
+                    <img
+                      src="/TaskFlow.png"
+                      alt="TaskFlow website image"
+                      className="absolute inset-0 h-full w-full object-cover"
+                    />
                   </a>
                 </article>
               </div>
@@ -113,11 +118,11 @@ export default function PortfolioPage() {
               <div className="p-[4px] rounded-2xl bg-radial-[at_25%_25%] from-white to-zinc-900 to-75% shadow-[0_0_50px_#0b0b0b]/50 m-3 max-w-sm">
                 <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 border bg-[#0b0b0b]">
                   <a href="https://github.com/Mency-cj/Personal-Portfolio">
-                  <img
-                    src="/portfolio.png"
-                    alt="University of Southern California"
-                    className="absolute inset-0 h-full w-full object-cover"
-                  />
+                    <img
+                      src="/portfolio.png"
+                      alt="Personal Portfolio website image"
+                      className="absolute inset-0 h-full w-full object-cover"
+                    />
                   </a>
                 </article>
               </div>
@@ -138,9 +143,6 @@ export default function PortfolioPage() {
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                   Vercel
                 </span>
-                {/* <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #winter
-                </span> */}
               </div>
               <div className="flex justify-center py-3 my-2">
                 <Link
