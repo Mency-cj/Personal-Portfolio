@@ -42,26 +42,29 @@ export default function AboutPage() {
   ];
   return (
     <>
-      <div className="px-49">
-        <div className="text-center pt-14 pb-24">
+      <div className="xl:px-49 px-3">
+        <div className="text-center pt-14 lg:pb-24  md:pb-13">
           <h1 className="font-light text-lg text-gray-500 pb-6">
             Get to know me
           </h1>
           <div className="relative">
-            <h1 className="font-extrabold text-[56px]">
+            <h1 className="font-extrabold md:text-[56px] text-[40px]">
               ABOUT <span className="text-amber-400">ME</span>
             </h1>
-            <span className="absolute left-0 right-0 top-[50%] font-[800] tracking-[.8] text-[110px] transform -translate-y-1/2 text-[hsla(0,0%,100%,0.07)]">
+            <span className="absolute left-0 right-0 top-[50%] font-[800] tracking-[.8] md:text-[110px] text-[70px] transform -translate-y-1/2 text-[hsla(0,0%,100%,0.07)]">
               RESUME
             </span>
           </div>
         </div>
-        <div className="px-8 pt-10 pb-20">
-          <div className="flex">
-            <div>
-              <img src="/Photo.jpg" alt="" className="rounded-4xl" />
+        <div className="md:px-8 pt-10 pb-20">
+          <div className="lg:flex">
+            <div className="">
+              <img src="/Photo.jpg" alt="" className="rounded-4xl hidden lg:block" />
             </div>
-            <div className="pl-10">
+            <div className="hidden md:block lg:hidden pb-9">
+              <img src="/Photo-1.jpg" alt="" className="rounded-full w-[240px] h-[240px] border-[4px] border-[#252525] block mx-auto" />
+            </div>
+            <div className="lg:pl-10 px-3">
               <div>
                 <h2 className="text-amber-400 text-2xl font-extralight">
                   Who am I?
@@ -86,7 +89,7 @@ export default function AboutPage() {
                   <hr className="border-t-2 border-neutral-600" />
                 </div>
                 <div>
-                  <div className="flex justify-between p-3">
+                  <div className="md:flex md:justify-between p-3">
                     <div className="pt-2">
                       <p className="text-neutral-400 font-semibold">
                         <span className="text-gray-100 font-sans font-semibold mr-3">
@@ -104,8 +107,8 @@ export default function AboutPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex p-3">
-                    <div className="mr-85">
+                  <div className="md:flex p-3">
+                    <div className="xl:mr-85 lg:mr-67 md:mr-85">
                       <p className="text-neutral-400 font-semibold">
                         <span className="text-gray-100 font-sans font-semibold mr-3">
                           Age:
@@ -150,10 +153,10 @@ export default function AboutPage() {
         <div className="flex flex-col items-center justify-center text-white py-12">
           <h2 className="text-2xl font-bold mb-12">MY SKILLS</h2>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-36">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-36 px-17">
             {skills.map((skill, index) => (
               <div key={index} className="flex flex-col items-center">
-                <div className="relative w-30 h-30">
+                <div className="relative md:w-30 md:h-30 w-25 h-25">
                   <svg
                     className="w-full h-full rotate-[-90deg]"
                     viewBox="0 0 36 36"
@@ -197,7 +200,7 @@ export default function AboutPage() {
           </div>
         </div>
         <hr className="border-t-1 mx-auto max-w-lg border-[#252525]" />
-        <section className=" text-white py-16 px-4">
+        <section className=" text-white py-16 lg:px-4 md:px-10">
           <h2 className="text-3xl font-bold text-center mb-12">EDUCATION</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Experience */}

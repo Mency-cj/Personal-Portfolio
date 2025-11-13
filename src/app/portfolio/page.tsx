@@ -10,22 +10,22 @@ export default function PortfolioPage() {
   };
   return (
     <>
-      <div className="px-49">
+      <div className="xl:px-49 px-3 lg:px-35">
         <div className="text-center pt-14 pb-24">
           <h1 className="font-light text-lg text-gray-500 pb-6">
             Showcasing some of my work
           </h1>
           <div className="relative">
-            <h1 className="font-extrabold text-[56px]">
+            <h1 className="font-extrabold md:text-[56px] text-[37px]">
               MY <span className="text-amber-400">PORTFOLIO</span>
             </h1>
-            <span className="absolute left-0 right-0 top-[50%] font-[800] tracking-[.8] text-[110px] transform -translate-y-1/2 text-[hsla(0,0%,100%,0.07)]">
+            <span className="absolute left-0 right-0 top-[50%] font-[800] tracking-[.8] md:text-[110px] text-[70px] transform -translate-y-1/2 text-[hsla(0,0%,100%,0.07)]">
               WORKS
             </span>
           </div>
         </div>
-        <div className="mb-20">
-          <div className="grid grid-cols-3 gap-15">
+        <div className="mb-20 px-2 lg:px-0 md:px-3">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-15">
             <div className="max-w-sm rounded-3xl overflow-hidden text-white bg-white shadow-lg">
               <div className="p-[4px] rounded-2xl bg-radial-[at_25%_25%] from-white to-zinc-900 to-75% shadow-[0_0_50px_#0b0b0b]/50 m-3 max-w-sm">
                 <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 border bg-[#0b0b0b]">

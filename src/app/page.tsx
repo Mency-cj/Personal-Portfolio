@@ -7,36 +7,36 @@ import { TypeAnimation } from "react-type-animation";
 export default function Home() {
   return (
     <>
-      <div className="flex justify-center pt-36">
-        {/* <div>
-          <img src="/free-nature-images.jpg" alt="free nature images" width={600} height={400} />
-        </div> */}
+      <div className="md:flex md:justify-center md:pt-36 pt-10">
+        <div className="md:hidden">
+          <img src="/Photo-1.jpg" alt="free nature images" className="rounded-full w-[240px] h-[240px] border-[4px] border-[#252525] block mx-auto " />
+        </div>
         <div>
-          <div className="pt-28 pb-10">
-            <h1 className="font-semibold text-6xl pb-8 text-amber-400">
-              LITTLE MENCY
+          <div className="md:pt-28 pb-10 pt-8">
+            <h1 className="md:font-semibold md:text-6xl text-center text-3xl font-bold pb-8 text-amber-400">
+              <span className="text-amber md:hidden">I'M </span>LITTLE MENCY
             </h1>
 
-            <h1 className=" text-center text-3xl">
+            <h1 className=" text-center md:text-3xl text-2xl">
               I'm a{" "}
               <TypeAnimation
                 sequence={[
                   "Developer",
-                  3000,
+                  1000,
                   "Designer",
-                  3000,
+                  1000,
                   "Innovator",
-                  3000,
+                  1000,
                 ]}
                 speed={40}
                 deletionSpeed={30}
                 wrapper="span"
                 repeat={Infinity}
-                className="inline-block transition-opacity duration-400 ease-in-out text-[32px] font-semibold text-amber-400"
+                className="inline-block transition-opacity duration-400 ease-in-out md:text-[32px] text-[29px] font-semibold text-amber-400"
               />
             </h1>
           </div>
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-4 ">
             <Link href={"/about"}>
               <button className="group relative inline-flex h-[calc(48px+6px)] items-center justify-center rounded-full border-[2px] border-amber-400 bg-neutral-950 py-1 pl-6 pr-14 font-medium text-neutral-50 cursor-pointer">
                 <span className="z-10 text-[18px] font-semibold px-3">

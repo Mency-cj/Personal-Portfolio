@@ -35,23 +35,23 @@ export default function ContactPage() {
 
   return (
     <>
-      <div className="px-49">
+      <div className="xl:px-49 px-3 lg:px-20">
         <div className="text-center pt-14 pb-24">
           <h1 className="font-light text-lg text-gray-500 pb-6">
             Feel free to contact me
           </h1>
           <div className="relative">
-            <h1 className="font-extrabold text-[56px]">
+            <h1 className="font-extrabold md:text-[56px] text-[35px]">
               GET IN <span className="text-amber-400">TOUCH</span>
             </h1>
-            <span className="absolute left-0 right-0 top-[50%] font-[800] tracking-[.8] text-[110px] transform -translate-y-1/2 text-[hsla(0,0%,100%,0.07)]">
+            <span className="absolute left-0 right-0 top-[50%] font-[800] tracking-[.8] md:text-[110px] text-[60px] transform -translate-y-1/2 text-[hsla(0,0%,100%,0.07)]">
               CONTACT
             </span>
           </div>
         </div>
-        <div className="pb-32">
-          <div className="flex">
-            <div className="w-fit">
+        <div className="pb-32 md:px-8 lg:px-0">
+          <div className="lg:flex">
+            <div className="w-fit pb-18">
               <div>
                 <h1 className="text-[25px] font-bold pb-4">DON'T BE SHY !</h1>
                 <p className="text-[16px] mb-7">
@@ -97,13 +97,15 @@ export default function ContactPage() {
               </div>
               <div>
                 <ul className="flex">
+                  <Link href={"https://www.linkedin.com/in/little-mency-c-j-a69312250/"} target="_blank"
+                  rel="noopener noreferrer">
                   <li className="w-11 h-11 flex items-center justify-center rounded-full bg-[#2b2a2a] mr-4 hover:bg-amber-400">
-                    <a href="">
+                    
                       <IoLogoLinkedin className="text-[18px]" />
-                    </a>
                   </li>
+                  </Link>
                   <li className="w-11 h-11 flex items-center justify-center rounded-full bg-[#2b2a2a] mr-4 hover:bg-amber-400">
-                    <a href="">
+                    <a href="https://github.com/Mency-cj">
                       <VscGithub className="text-[19px]" />
                     </a>
                   </li>
@@ -120,10 +122,10 @@ export default function ContactPage() {
                 </ul>
               </div>
             </div>
-            <div className="pl-4 ml-6">
+            <div className="lg:pl-4 lg:ml-6">
               <form
                 // onSubmit={handleSubmit}
-                className="  space-y-8 text-gray-300"
+                className="space-y-8 text-gray-300"
               >
                 <div className="flex flex-col md:flex-row gap-4 w-full">
                   <input
@@ -132,7 +134,7 @@ export default function ContactPage() {
                     placeholder="YOUR NAME"
                     // value={formData.name}
                     // onChange={handleChange}
-                    className="flex-1 bg-[#1a1a1a] placeholder-gray-500 text-gray-200 px-20 py-3 rounded-full outline-none focus:ring-2 focus:ring-yellow-500 transition"
+                    className="flex-1 bg-[#1a1a1a] placeholder-gray-500 text-gray-200 px-20 md:px-16 lg:px-20 py-3 rounded-full outline-none focus:ring-2 focus:ring-yellow-500 transition"
                   />
                   <input
                     type="email"
@@ -140,7 +142,7 @@ export default function ContactPage() {
                     placeholder="YOUR EMAIL"
                     // value={formData.email}
                     // onChange={handleChange}
-                    className="flex-1 bg-[#1a1a1a] placeholder-gray-500 text-gray-200 px-20 py-3 rounded-full outline-none focus:ring-2 focus:ring-yellow-500 transition"
+                    className="flex-1 bg-[#1a1a1a] placeholder-gray-500 text-gray-200 px-20 md:px-16 lg:px-20 py-3 rounded-full outline-none focus:ring-2 focus:ring-yellow-500 transition"
                   />
                 </div>
 
