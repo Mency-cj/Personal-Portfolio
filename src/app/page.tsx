@@ -13,7 +13,7 @@ export default function Home() {
         </div>
         <div>
           <div className="md:pt-28 pb-10 pt-8">
-            <h1 className="md:font-semibold md:text-6xl text-center text-3xl font-bold pb-8 text-amber-400">
+            <h1 className="md:font-bold md:text-6xl text-center text-3xl font-bold pb-8 text-amber-400">
               <span className="text-amber md:hidden">I'M </span>LITTLE MENCY
             </h1>
 
