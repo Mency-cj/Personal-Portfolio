@@ -9,12 +9,16 @@ export default function Home() {
     <>
       <div className="md:flex md:justify-center md:pt-36 pt-10">
         <div className="md:hidden">
-          <img src="/Photo-1.jpg" alt="free nature images" className="rounded-full w-[240px] h-[240px] border-[4px] border-[#252525] block mx-auto " />
+          <img
+            src="/Photo-1.jpg"
+            alt="free nature images"
+            className="rounded-full w-[240px] h-[240px] border-[4px] border-[#252525] block mx-auto "
+          />
         </div>
         <div>
           <div className="md:pt-28 pb-10 pt-8">
             <h1 className="md:font-bold md:text-6xl text-center text-3xl font-bold pb-8 text-amber-400">
-              <span className="text-amber md:hidden">I'M </span>LITTLE MENCY
+              <span className="text-amber md:hidden">I'M </span>LITTLE MENCY CJ
             </h1>
 
             <h1 className=" text-center md:text-3xl text-2xl">
